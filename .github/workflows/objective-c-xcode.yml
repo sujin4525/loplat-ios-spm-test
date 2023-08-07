@@ -20,9 +20,9 @@ jobs:
         run: |
           existing_tag=$(git tag --list "${{ github.event.inputs.version }}")
           if [[ -z "$existing_tag" ]]; then
-            echo "::set-output name=version_exists::true"
-          else
             echo "::set-output name=version_exists::false"
+          else
+            echo "::set-output name=version_exists::true"
           fi
         continue-on-error: true
 
