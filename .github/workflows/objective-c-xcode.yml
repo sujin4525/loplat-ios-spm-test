@@ -20,8 +20,12 @@ jobs:
           existing_tag=$(git ls-remote --tags "https://github.com/$GITHUB_REPOSITORY.git" "refs/tags/$VERSION")
           if [[ -n "$existing_tag" ]]; then
             echo "Tag $VERSION already exists. Deleting tag and release..."
-            curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/tags/$VERSION"
-            git push origin --delete "$VERSION"
+            release_id=$(curl -s -H "Authorization: token $ACCESS_TOKEN" "https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/releases/tags/$existing_tag" | jq -r '.id')
+            echo "Release ID: $release_id"
+
+            #curl -L -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/$GITHUB_REPOSITORY/releases/RELEASE_ID
+            #curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/tags/$VERSION"
+            #git push origin --delete "$VERSION"
           fi
 
 
