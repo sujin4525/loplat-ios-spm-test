@@ -1,0 +1,54 @@
+name: Xcode - Build and Analyze
+
+on:
+  workflow_dispatch:
+    inputs:
+       logLevel:
+          description: 'version'     
+          required: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Check if version exists
+        id: check_version
+        run: |
+          existing_tag=$(git tag --list "${{ github.event.inputs.version }}")
+          if [[ -z "$existing_tag" ]]; then
+            echo "::set-output name=version_exists::false"
+          else
+            echo "::set-output name=version_exists::true"
+          fi
+        continue-on-error: true
+
+      - name: Delete existing version
+        if: steps.check_version.outputs.version_exists == 'true'
+        run: |
+          existing_tag="${{ github.event.inputs.version }}"
+          git tag -d $existing_tag
+          git push origin :refs/tags/$existing_tag
+          echo "Deleted existing tag: $existing_tag"
+
+      - name: Create new tag and release
+        run: |
+          new_version="${{ github.event.inputs.version }}"
+
+          git tag $new_version
+          git push origin $new_version
+
+          echo "Created new tag: $new_version"
+
+          # Create GitHub release
+          token="${{ secrets.GITHUB_TOKEN }}"
+          body="Release notes for $new_version"
+          curl -X POST "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases" \
+            -H "Authorization: token $token" \
+            -d "{\"tag_name\": \"$new_version\", \"body\": \"$body\"}"
+
+          echo "Created new release for $new_version"
+
