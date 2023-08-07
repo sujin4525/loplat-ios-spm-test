@@ -44,7 +44,7 @@ jobs:
           echo "Created new tag: $new_version"
 
           # Create GitHub release
-          token="${{ secrets.PAT }}"
+          token="${{ secrets.GITHUB_TOKEN }}"
           body="Release notes for $new_version"
           curl -X POST "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases" \
             -H "Authorization: token $token" \
