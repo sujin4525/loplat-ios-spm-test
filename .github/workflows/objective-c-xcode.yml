@@ -28,7 +28,7 @@ jobs:
         continue-on-error: true
 
       - name: Delete existing version
-        if: steps.check_version.outputs.version_exists == 'true'
+        #if: steps.check_version.outputs.version_exists == 'true'
         run: |
           existing_tag="${{ github.event.inputs.version }}"
           release_id=$(curl -s -H "Authorization: token $ACCESS_TOKEN" "https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/releases/tags/$existing_tag" | jq -r '.id')
