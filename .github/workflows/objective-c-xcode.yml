@@ -23,7 +23,7 @@ jobs:
             release_id=$(curl -s -H "Authorization: token $ACCESS_TOKEN" "https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/releases/tags/$existing_tag" | jq -r '.id')
             echo "Release ID: $release_id"
 
-            #curl -L -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/$GITHUB_REPOSITORY/releases/RELEASE_ID
+            curl -L -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$release_id
             #curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/tags/$VERSION"
             #git push origin --delete "$VERSION"
           fi
