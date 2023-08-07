@@ -24,12 +24,4 @@ jobs:
             git push origin --delete "$VERSION"
           fi
 
-      - name: Create new tag and release
-        uses: actions/create-release@v1
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with: 
-          tag_name: ${{ github.event.inputs.version }} 
-          release_name: ${{ github.event.inputs.version }} 
-
 
