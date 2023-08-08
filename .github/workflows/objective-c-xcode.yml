@@ -20,7 +20,8 @@ jobs:
         id: check_version
         run: |
           echo "${{ github.event.inputs.version }}"
-          existing_tag=$(git tag --list "${{ github.event.inputs.version }}")
+          #existing_tag=$(git tag --list "${{ github.event.inputs.version }}")
+          existing_tag=$(git tag -l | grep "${{ github.event.inputs.version }}")
           echo "tag $existing_tag"
           
           if [[ -z "$existing_tag" ]]; then
