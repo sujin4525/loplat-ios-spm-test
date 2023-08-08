@@ -33,6 +33,10 @@ jobs:
       - name: Check if version exists
         id: check_version
         run: |
+          echo "${{ github.event.inputs.version }}"
+          echo "$github.event.inputs.version"
+          echo "${github.event.inputs.version}"
+
           existing_tag=$(git tag --list "${{ github.event.inputs.version }}")
           echo "tag $existing_tag"
           if [[ -z "$existing_tag" ]]; then
