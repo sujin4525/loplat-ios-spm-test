@@ -36,7 +36,6 @@ jobs:
           else
             echo "::set-output name=version_exists::true"
           fi
-
         continue-on-error: true
 
       - name: version eixst
@@ -56,6 +55,7 @@ jobs:
 
           echo "Release ID: $release_id"
           curl -L -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/sujin4525/loplat-ios-spm-test/releases/$release_id
+
 
 
       - name: Delete existing tag
