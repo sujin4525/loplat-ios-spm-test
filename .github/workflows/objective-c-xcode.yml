@@ -28,7 +28,7 @@ jobs:
            echo "Tag name from github.ref_name: ${{  github.ref_name }}"
            git tag
            git tag --list
-
+           git tag -l
         
       - name: Check if version exists
         id: check_version
