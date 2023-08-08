@@ -25,6 +25,8 @@ jobs:
           else
             echo "::set-output name=version_exists::true"
           fi
+          echo "exists: $steps.check_version.outputs.version_exists"
+
         continue-on-error: true
 
       - name: Delete existing version
