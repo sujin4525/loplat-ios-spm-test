@@ -52,6 +52,7 @@ jobs:
           # Create GitHub release
           token="${{ secrets.GITHUB_TOKEN }}"
           body="Release notes for $new_version"
+          
           curl -X POST "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases" \
             -H "Authorization: token $token" \
             -d "{\"tag_name\": \"$new_version\", \"body\": \"$body\"}"
