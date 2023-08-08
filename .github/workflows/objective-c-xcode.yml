@@ -19,6 +19,7 @@ jobs:
       - name: Check if version exists
         id: check_version
         run: |
+          git tag
           existing_tag=$(git tag --list "${{ github.event.inputs.version }}")
           echo "tag $(git tag --list "${{ github.event.inputs.version }}")"
           if [[ -z "$existing_tag" ]]; then
