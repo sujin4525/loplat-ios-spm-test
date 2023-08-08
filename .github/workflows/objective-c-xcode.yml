@@ -28,7 +28,7 @@ jobs:
         continue-on-error: true
 
       - name: Delete existing version
-        #if: steps.check_version.outputs.version_exists == 'true'
+        if: steps.check_version.outputs.version_exists == 'true'
         run: |
           existing_tag="${{ github.event.inputs.version }}"
           echo "$existing_tag"
