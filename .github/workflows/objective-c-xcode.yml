@@ -20,8 +20,7 @@ jobs:
         id: check_version
         run: |
           echo "${{ github.event.inputs.version }}"
-          #existing_tag=$(git tag --list "${{ github.event.inputs.version }}")
-          existing_tag=$(git tag -l | grep "${{ github.event.inputs.version }}")
+          existing_tag=$(git tag --list "${{ github.event.inputs.version }}")
           echo "tag $existing_tag"
           
           if [[ -z "$existing_tag" ]]; then
@@ -29,10 +28,15 @@ jobs:
           else
             echo "::set-output name=version_exists::true"
           fi
-          echo "exists: $steps.check_version.outputs.version_exists"
 
         continue-on-error: true
 
+      - name: version eixst
+        if: steps.check_version.outputs.version_exists == 'false'
+        run: |
+            echo "value is false"
+            echo "$steps.check_version.outputs.version_exists"
+            
       - name: Delete existing version
         if: steps.check_version.outputs.version_exists == 'true'
         run: |
