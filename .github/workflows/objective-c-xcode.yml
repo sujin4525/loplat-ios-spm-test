@@ -15,11 +15,16 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
+      - name: check git tag
+        run: |
+            git tag
+            git tag --list
+
         
       - name: Check if version exists
         id: check_version
         run: |
-          git tag
           existing_tag=$(git tag --list "${{ github.event.inputs.version }}")
           echo "tag $existing_tag"
           if [[ -z "$existing_tag" ]]; then
