@@ -15,6 +15,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - run: |
+          git fetch --prune --unshallow
+      - run: |
+          echo $(git tag -l)
+
 
       - name: Check if version exists
         id: check_version
