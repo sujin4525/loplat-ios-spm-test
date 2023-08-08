@@ -21,7 +21,9 @@ jobs:
         run: |
           echo "${{ github.event.inputs.version }}"
           existing_tag=$(git tag --list "${{ github.event.inputs.version }}")
-          echo "tag $existing_tag"
+          #echo "tag $existing_tag"
+          echo "tag ${existing_tag//$'\n'/}"
+
           
           if [[ -z "$existing_tag" ]]; then
             echo "::set-output name=version_exists::false"
