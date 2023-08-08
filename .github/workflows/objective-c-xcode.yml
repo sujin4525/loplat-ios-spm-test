@@ -16,28 +16,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-
-      - name: Create tag artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: ${{github.ref_name}}
-          path: Release
-        
-      - name: check git tag
-        run: |
-           echo "Tag name from github.ref_name: ${{  github.ref_name }}"
-           git tag
-           git tag --list
-           git tag -l
-        
       - name: Check if version exists
         id: check_version
         run: |
           echo "${{ github.event.inputs.version }}"
-          echo "$github.event.inputs.version"
-
           existing_tag=$(git tag --list "${{ github.event.inputs.version }}")
-          echo "tag ${{ existing_tag }}"
+          echo "tag ${{ existing_tag }} "
+          
           if [[ -z "$existing_tag" ]]; then
             echo "::set-output name=version_exists::false"
           else
