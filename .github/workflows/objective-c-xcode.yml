@@ -40,7 +40,8 @@ jobs:
           curl -L -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/sujin4525/loplat-ios-spm-test/releases/$release_id
 
           git tag -d $existing_tag
-          git push origin :refs/tags/$existing_tag
+          #git push origin :refs/tags/$existing_tag
+          git push --delete origin $existing_tag
           echo "Deleted existing tag: $existing_tag"
           
       - name: Create new tag and release
