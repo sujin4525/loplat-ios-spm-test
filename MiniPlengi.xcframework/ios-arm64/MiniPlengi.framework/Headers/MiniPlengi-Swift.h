@@ -433,6 +433,11 @@ SWIFT_PROTOCOL("_TtP10MiniPlengi13PlaceDelegate_")
 /// \param plengiResponse 이벤트 결과를 담은 객체입니다. 자세한 사항은 https://developers.loplat.com 을 참고 해주세요.
 ///
 - (void)responsePlaceEvent:(PlengiResponse * _Nonnull)plengiResponse;
+@optional
+/// manual 장소인식 요청시에 실시간 process 이벤트가 전달됩니다. (TEST 모드에서만 사용 / Optional)
+/// \param msg 실시간 process 이벤트 메시지
+///
+- (void)responseManualProcess:(NSString * _Nonnull)msg;
 @end
 
 typedef SWIFT_ENUM(NSInteger, PlaceEvent, open) {
@@ -644,6 +649,11 @@ enum Result : NSInteger;
 /// 추적 권한을 요청합니다.
 /// iOS 14.5부터 IDFA(광고아이디)를 사용하기 위하여 유저가 권한을 부여해야 합니다.
 + (void)requestTrackingAuthorizationWithCompletion:(void (^ _Nonnull)(void))completion;
+/// SDK의 버전을 전달합니다.
+///
+/// returns:
+/// String형태의 SDK의 버전정보
++ (NSString * _Nullable)getSdkVersion SWIFT_WARN_UNUSED_RESULT;
 @end
 
 enum ResponseType : NSInteger;
