@@ -740,6 +740,37 @@
           },
           {
             "kind": "Function",
+            "name": "setBrazeUserID",
+            "printedName": "setBrazeUserID(userID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MiniPlengi@objc(cs)Plengi(cm)setBrazeUserIDWithUserID:",
+            "mangledName": "$s10MiniPlengi0B0C14setBrazeUserID04userF0ySS_tFZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "objc_name": "setBrazeUserIDWithUserID:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "stop",
             "printedName": "stop()",
             "children": [
@@ -1535,6 +1566,132 @@
         "printedName": "CoreLocation",
         "declKind": "Import",
         "moduleName": "MiniPlengi"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MiniPlengi",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ManagingVersion",
+        "printedName": "ManagingVersion",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MiniPlengi15ManagingVersionC7versionSSvpZ",
+            "mangledName": "$s10MiniPlengi15ManagingVersionC7versionSSvpZ",
+            "moduleName": "MiniPlengi",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MiniPlengi15ManagingVersionC7versionSSvgZ",
+                "mangledName": "$s10MiniPlengi15ManagingVersionC7versionSSvgZ",
+                "moduleName": "MiniPlengi",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MiniPlengi15ManagingVersionC7versionSSvsZ",
+                "mangledName": "$s10MiniPlengi15ManagingVersionC7versionSSvsZ",
+                "moduleName": "MiniPlengi",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MiniPlengi15ManagingVersionC7versionSSvMZ",
+                "mangledName": "$s10MiniPlengi15ManagingVersionC7versionSSvMZ",
+                "moduleName": "MiniPlengi",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10MiniPlengi15ManagingVersionC",
+        "mangledName": "$s10MiniPlengi15ManagingVersionC",
+        "moduleName": "MiniPlengi",
+        "declAttributes": [
+          "AccessControl",
+          "MainType"
+        ],
+        "hasMissingDesignatedInitializers": true
       },
       {
         "kind": "Import",
@@ -12857,6 +13014,494 @@
       },
       {
         "kind": "Import",
+        "name": "BackgroundTasks",
+        "printedName": "BackgroundTasks",
+        "declKind": "Import",
+        "moduleName": "MiniPlengi",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "MiniPlengi"
+      },
+      {
+        "kind": "Import",
+        "name": "UserNotifications",
+        "printedName": "UserNotifications",
+        "declKind": "Import",
+        "moduleName": "MiniPlengi"
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "MiniPlengi"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EngineStatus",
+        "printedName": "EngineStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "STOPPED",
+            "printedName": "STOPPED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiniPlengi.EngineStatus.Type) -> MiniPlengi.EngineStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EngineStatus",
+                    "printedName": "MiniPlengi.EngineStatus",
+                    "usr": "c:@M@MiniPlengi@E@EngineStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiniPlengi.EngineStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EngineStatus",
+                        "printedName": "MiniPlengi.EngineStatus",
+                        "usr": "c:@M@MiniPlengi@E@EngineStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiniPlengi@E@EngineStatus@EngineStatusSTOPPED",
+            "mangledName": "$s10MiniPlengi12EngineStatusO7STOPPEDyA2CmF",
+            "moduleName": "MiniPlengi",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "STARTED",
+            "printedName": "STARTED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiniPlengi.EngineStatus.Type) -> MiniPlengi.EngineStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EngineStatus",
+                    "printedName": "MiniPlengi.EngineStatus",
+                    "usr": "c:@M@MiniPlengi@E@EngineStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiniPlengi.EngineStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EngineStatus",
+                        "printedName": "MiniPlengi.EngineStatus",
+                        "usr": "c:@M@MiniPlengi@E@EngineStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiniPlengi@E@EngineStatus@EngineStatusSTARTED",
+            "mangledName": "$s10MiniPlengi12EngineStatusO7STARTEDyA2CmF",
+            "moduleName": "MiniPlengi",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MiniPlengi.EngineStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EngineStatus",
+                    "printedName": "MiniPlengi.EngineStatus",
+                    "usr": "c:@M@MiniPlengi@E@EngineStatus"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MiniPlengi12EngineStatusO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10MiniPlengi12EngineStatusO8rawValueACSgSi_tcfc",
+            "moduleName": "MiniPlengi",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MiniPlengi12EngineStatusO8rawValueSivp",
+            "mangledName": "$s10MiniPlengi12EngineStatusO8rawValueSivp",
+            "moduleName": "MiniPlengi",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MiniPlengi12EngineStatusO8rawValueSivg",
+                "mangledName": "$s10MiniPlengi12EngineStatusO8rawValueSivg",
+                "moduleName": "MiniPlengi",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@MiniPlengi@E@EngineStatus",
+        "mangledName": "$s10MiniPlengi12EngineStatusO",
+        "moduleName": "MiniPlengi",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TestModeStatus",
+        "printedName": "TestModeStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "RELEASE_SERVER",
+            "printedName": "RELEASE_SERVER",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiniPlengi.TestModeStatus.Type) -> MiniPlengi.TestModeStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TestModeStatus",
+                    "printedName": "MiniPlengi.TestModeStatus",
+                    "usr": "c:@M@MiniPlengi@E@TestModeStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiniPlengi.TestModeStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TestModeStatus",
+                        "printedName": "MiniPlengi.TestModeStatus",
+                        "usr": "c:@M@MiniPlengi@E@TestModeStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiniPlengi@E@TestModeStatus@TestModeStatusRELEASE_SERVER",
+            "mangledName": "$s10MiniPlengi14TestModeStatusO14RELEASE_SERVERyA2CmF",
+            "moduleName": "MiniPlengi",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "HALF_STAGING_SERVER",
+            "printedName": "HALF_STAGING_SERVER",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiniPlengi.TestModeStatus.Type) -> MiniPlengi.TestModeStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TestModeStatus",
+                    "printedName": "MiniPlengi.TestModeStatus",
+                    "usr": "c:@M@MiniPlengi@E@TestModeStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiniPlengi.TestModeStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TestModeStatus",
+                        "printedName": "MiniPlengi.TestModeStatus",
+                        "usr": "c:@M@MiniPlengi@E@TestModeStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiniPlengi@E@TestModeStatus@TestModeStatusHALF_STAGING_SERVER",
+            "mangledName": "$s10MiniPlengi14TestModeStatusO19HALF_STAGING_SERVERyA2CmF",
+            "moduleName": "MiniPlengi",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "FULL_STAGING_SERVER",
+            "printedName": "FULL_STAGING_SERVER",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiniPlengi.TestModeStatus.Type) -> MiniPlengi.TestModeStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TestModeStatus",
+                    "printedName": "MiniPlengi.TestModeStatus",
+                    "usr": "c:@M@MiniPlengi@E@TestModeStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiniPlengi.TestModeStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TestModeStatus",
+                        "printedName": "MiniPlengi.TestModeStatus",
+                        "usr": "c:@M@MiniPlengi@E@TestModeStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiniPlengi@E@TestModeStatus@TestModeStatusFULL_STAGING_SERVER",
+            "mangledName": "$s10MiniPlengi14TestModeStatusO19FULL_STAGING_SERVERyA2CmF",
+            "moduleName": "MiniPlengi",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MiniPlengi.TestModeStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TestModeStatus",
+                    "printedName": "MiniPlengi.TestModeStatus",
+                    "usr": "c:@M@MiniPlengi@E@TestModeStatus"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MiniPlengi14TestModeStatusO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10MiniPlengi14TestModeStatusO8rawValueACSgSi_tcfc",
+            "moduleName": "MiniPlengi",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MiniPlengi14TestModeStatusO8rawValueSivp",
+            "mangledName": "$s10MiniPlengi14TestModeStatusO8rawValueSivp",
+            "moduleName": "MiniPlengi",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MiniPlengi14TestModeStatusO8rawValueSivg",
+                "mangledName": "$s10MiniPlengi14TestModeStatusO8rawValueSivg",
+                "moduleName": "MiniPlengi",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@MiniPlengi@E@TestModeStatus",
+        "mangledName": "$s10MiniPlengi14TestModeStatusO",
+        "moduleName": "MiniPlengi",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -13699,494 +14344,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "BackgroundTasks",
-        "printedName": "BackgroundTasks",
-        "declKind": "Import",
-        "moduleName": "MiniPlengi",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "MiniPlengi"
-      },
-      {
-        "kind": "Import",
-        "name": "UserNotifications",
-        "printedName": "UserNotifications",
-        "declKind": "Import",
-        "moduleName": "MiniPlengi"
-      },
-      {
-        "kind": "Import",
-        "name": "AppTrackingTransparency",
-        "printedName": "AppTrackingTransparency",
-        "declKind": "Import",
-        "moduleName": "MiniPlengi"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "EngineStatus",
-        "printedName": "EngineStatus",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "STOPPED",
-            "printedName": "STOPPED",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MiniPlengi.EngineStatus.Type) -> MiniPlengi.EngineStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EngineStatus",
-                    "printedName": "MiniPlengi.EngineStatus",
-                    "usr": "c:@M@MiniPlengi@E@EngineStatus"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MiniPlengi.EngineStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "EngineStatus",
-                        "printedName": "MiniPlengi.EngineStatus",
-                        "usr": "c:@M@MiniPlengi@E@EngineStatus"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@MiniPlengi@E@EngineStatus@EngineStatusSTOPPED",
-            "mangledName": "$s10MiniPlengi12EngineStatusO7STOPPEDyA2CmF",
-            "moduleName": "MiniPlengi",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "STARTED",
-            "printedName": "STARTED",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MiniPlengi.EngineStatus.Type) -> MiniPlengi.EngineStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EngineStatus",
-                    "printedName": "MiniPlengi.EngineStatus",
-                    "usr": "c:@M@MiniPlengi@E@EngineStatus"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MiniPlengi.EngineStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "EngineStatus",
-                        "printedName": "MiniPlengi.EngineStatus",
-                        "usr": "c:@M@MiniPlengi@E@EngineStatus"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@MiniPlengi@E@EngineStatus@EngineStatusSTARTED",
-            "mangledName": "$s10MiniPlengi12EngineStatusO7STARTEDyA2CmF",
-            "moduleName": "MiniPlengi",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MiniPlengi.EngineStatus?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EngineStatus",
-                    "printedName": "MiniPlengi.EngineStatus",
-                    "usr": "c:@M@MiniPlengi@E@EngineStatus"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10MiniPlengi12EngineStatusO8rawValueACSgSi_tcfc",
-            "mangledName": "$s10MiniPlengi12EngineStatusO8rawValueACSgSi_tcfc",
-            "moduleName": "MiniPlengi",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MiniPlengi12EngineStatusO8rawValueSivp",
-            "mangledName": "$s10MiniPlengi12EngineStatusO8rawValueSivp",
-            "moduleName": "MiniPlengi",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10MiniPlengi12EngineStatusO8rawValueSivg",
-                "mangledName": "$s10MiniPlengi12EngineStatusO8rawValueSivg",
-                "moduleName": "MiniPlengi",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "c:@M@MiniPlengi@E@EngineStatus",
-        "mangledName": "$s10MiniPlengi12EngineStatusO",
-        "moduleName": "MiniPlengi",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TestModeStatus",
-        "printedName": "TestModeStatus",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "RELEASE_SERVER",
-            "printedName": "RELEASE_SERVER",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MiniPlengi.TestModeStatus.Type) -> MiniPlengi.TestModeStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TestModeStatus",
-                    "printedName": "MiniPlengi.TestModeStatus",
-                    "usr": "c:@M@MiniPlengi@E@TestModeStatus"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MiniPlengi.TestModeStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TestModeStatus",
-                        "printedName": "MiniPlengi.TestModeStatus",
-                        "usr": "c:@M@MiniPlengi@E@TestModeStatus"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@MiniPlengi@E@TestModeStatus@TestModeStatusRELEASE_SERVER",
-            "mangledName": "$s10MiniPlengi14TestModeStatusO14RELEASE_SERVERyA2CmF",
-            "moduleName": "MiniPlengi",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "HALF_STAGING_SERVER",
-            "printedName": "HALF_STAGING_SERVER",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MiniPlengi.TestModeStatus.Type) -> MiniPlengi.TestModeStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TestModeStatus",
-                    "printedName": "MiniPlengi.TestModeStatus",
-                    "usr": "c:@M@MiniPlengi@E@TestModeStatus"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MiniPlengi.TestModeStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TestModeStatus",
-                        "printedName": "MiniPlengi.TestModeStatus",
-                        "usr": "c:@M@MiniPlengi@E@TestModeStatus"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@MiniPlengi@E@TestModeStatus@TestModeStatusHALF_STAGING_SERVER",
-            "mangledName": "$s10MiniPlengi14TestModeStatusO19HALF_STAGING_SERVERyA2CmF",
-            "moduleName": "MiniPlengi",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Var",
-            "name": "FULL_STAGING_SERVER",
-            "printedName": "FULL_STAGING_SERVER",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MiniPlengi.TestModeStatus.Type) -> MiniPlengi.TestModeStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TestModeStatus",
-                    "printedName": "MiniPlengi.TestModeStatus",
-                    "usr": "c:@M@MiniPlengi@E@TestModeStatus"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MiniPlengi.TestModeStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TestModeStatus",
-                        "printedName": "MiniPlengi.TestModeStatus",
-                        "usr": "c:@M@MiniPlengi@E@TestModeStatus"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@MiniPlengi@E@TestModeStatus@TestModeStatusFULL_STAGING_SERVER",
-            "mangledName": "$s10MiniPlengi14TestModeStatusO19FULL_STAGING_SERVERyA2CmF",
-            "moduleName": "MiniPlengi",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 2
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MiniPlengi.TestModeStatus?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TestModeStatus",
-                    "printedName": "MiniPlengi.TestModeStatus",
-                    "usr": "c:@M@MiniPlengi@E@TestModeStatus"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10MiniPlengi14TestModeStatusO8rawValueACSgSi_tcfc",
-            "mangledName": "$s10MiniPlengi14TestModeStatusO8rawValueACSgSi_tcfc",
-            "moduleName": "MiniPlengi",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MiniPlengi14TestModeStatusO8rawValueSivp",
-            "mangledName": "$s10MiniPlengi14TestModeStatusO8rawValueSivp",
-            "moduleName": "MiniPlengi",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10MiniPlengi14TestModeStatusO8rawValueSivg",
-                "mangledName": "$s10MiniPlengi14TestModeStatusO8rawValueSivg",
-                "moduleName": "MiniPlengi",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "c:@M@MiniPlengi@E@TestModeStatus",
-        "mangledName": "$s10MiniPlengi14TestModeStatusO",
-        "moduleName": "MiniPlengi",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
           }
         ]
       },
@@ -15617,18 +15774,18 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.swift",
-      "kind": "StringLiteral",
-      "offset": 864,
-      "length": 7,
-      "value": "\"1.4.9\""
-    },
-    {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Model\/GeofenceRegion.swift",
       "kind": "StringLiteral",
       "offset": 235,
       "length": 14,
       "value": "\"MiniPlengi.GeofenceRegion\""
+    },
+    {
+      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/ManagingVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 229,
+      "length": 7,
+      "value": "\"2.0.0\""
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/ZIPEngine\/GZip\/GzipHeader.swift",
@@ -16459,133 +16616,126 @@
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "FloatLiteral",
-      "offset": 2315,
+      "offset": 2085,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 2356,
+      "offset": 2126,
       "length": 4,
       "value": "120"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "FloatLiteral",
-      "offset": 2402,
+      "offset": 2172,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 4564,
+      "offset": 4334,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 4597,
+      "offset": 4367,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 4628,
+      "offset": 4398,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 4662,
+      "offset": 4432,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 4703,
+      "offset": 4473,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "StringLiteral",
-      "offset": 4847,
+      "offset": 4617,
       "length": 18,
       "value": "\"loplat_bleMetaDB\""
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "StringLiteral",
-      "offset": 4909,
+      "offset": 4679,
       "length": 26,
       "value": "\"loplat_ble_meta_data.zip\""
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "StringLiteral",
-      "offset": 4972,
+      "offset": 4742,
       "length": 25,
       "value": "\"loplat_dl_temporary_dir\""
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 5092,
+      "offset": 4856,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 5130,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5182,
+      "offset": 4907,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "IntegerLiteral",
-      "offset": 5244,
+      "offset": 4969,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "BooleanLiteral",
-      "offset": 5892,
+      "offset": 5617,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "BooleanLiteral",
-      "offset": 6122,
+      "offset": 5847,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "BooleanLiteral",
-      "offset": 6310,
+      "offset": 6035,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Communication\/Bluetooth.swift",
       "kind": "BooleanLiteral",
-      "offset": 24461,
+      "offset": 25140,
       "length": 4,
       "value": "true"
     },
@@ -25704,6 +25854,83 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 303,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 324,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 303,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 324,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 395,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 428,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 461,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 395,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 428,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 461,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15582,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/ZIPEngine\/7-Zip\/7zFolder.swift",
       "kind": "IntegerLiteral",
       "offset": 641,
@@ -25856,83 +26083,6 @@
       "offset": 767,
       "length": 3,
       "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
-      "kind": "IntegerLiteral",
-      "offset": 303,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
-      "kind": "IntegerLiteral",
-      "offset": 324,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
-      "kind": "IntegerLiteral",
-      "offset": 303,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
-      "kind": "IntegerLiteral",
-      "offset": 324,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
-      "kind": "IntegerLiteral",
-      "offset": 395,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
-      "kind": "IntegerLiteral",
-      "offset": 428,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
-      "kind": "IntegerLiteral",
-      "offset": 461,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
-      "kind": "IntegerLiteral",
-      "offset": 395,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
-      "kind": "IntegerLiteral",
-      "offset": 428,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
-      "kind": "IntegerLiteral",
-      "offset": 461,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/Plengi.Interface.swift",
-      "kind": "BooleanLiteral",
-      "offset": 15459,
-      "length": 4,
-      "value": "true"
     }
   ]
 }

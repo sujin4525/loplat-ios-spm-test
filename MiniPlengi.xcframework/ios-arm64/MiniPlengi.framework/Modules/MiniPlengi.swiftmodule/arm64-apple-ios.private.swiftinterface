@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiniPlengi
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiniPlengi
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AdSupport.ASIdentifierManager
 import AdSupport
@@ -40,6 +40,10 @@ extension MiniPlengi.Deflate {
   @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
   @available(iOS 14.0, *)
   @objc public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @main public class ManagingVersion {
+  public static var version: Swift.String
   @objc deinit
 }
 public enum DeflateError : Swift.Error {
@@ -242,19 +246,6 @@ extension MiniPlengi.Advertisement {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc open class Nearbys : ObjectiveC.NSObject, Foundation.NSCoding {
-  @objc public var loplat_id: Swift.Int
-  @objc public var placename: Swift.String
-  @objc public var tags: Swift.String
-  @objc public var floor: Swift.Int
-  @objc public var lat: Swift.Double
-  @objc public var lng: Swift.Double
-  @objc public var accuracy: Swift.Double
-  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
-  @objc public func encode(with aCoder: Foundation.NSCoder)
-  @objc override dynamic public init()
-  @objc deinit
-}
 @objc public enum EngineStatus : Swift.Int {
   case STOPPED = 0
   case STARTED = 1
@@ -279,6 +270,7 @@ extension MiniPlengi.Plengi {
   @objc dynamic public class func `init`(clientID ID: Swift.String, clientSecret secret: Swift.String, echoCode: Swift.String? = nil) -> MiniPlengi.Result
   @objc dynamic public class func setEchoCode(echoCode: Swift.String?) -> MiniPlengi.Result
   @objc dynamic public class func initialize(clientID ID: Swift.String, clientSecret secret: Swift.String) -> MiniPlengi.Result
+  @objc dynamic public class func setBrazeUserID(userID: Swift.String)
   @objc dynamic public class func stop() -> MiniPlengi.Result
   @objc dynamic public class func start() -> MiniPlengi.Result
   @objc dynamic public class func start(_ interval: Swift.Int) -> MiniPlengi.Result
@@ -308,6 +300,19 @@ extension MiniPlengi.Plengi {
   @objc dynamic public class func getCurrentLocationInfo(completion: @escaping (_ plengiResponse: MiniPlengi.PlengiResponse) -> Swift.Void) -> MiniPlengi.Result
   public class func registerBgFetch()
   public class func setLocationAuthorizationAlert(title: Swift.String, message: Swift.String)
+}
+@_inheritsConvenienceInitializers @objc open class Nearbys : ObjectiveC.NSObject, Foundation.NSCoding {
+  @objc public var loplat_id: Swift.Int
+  @objc public var placename: Swift.String
+  @objc public var tags: Swift.String
+  @objc public var floor: Swift.Int
+  @objc public var lat: Swift.Double
+  @objc public var lng: Swift.Double
+  @objc public var accuracy: Swift.Double
+  @objc required convenience public init?(coder aDecoder: Foundation.NSCoder)
+  @objc public func encode(with aCoder: Foundation.NSCoder)
+  @objc override dynamic public init()
+  @objc deinit
 }
 extension MiniPlengi.MonitoringType : Swift.Equatable {}
 extension MiniPlengi.MonitoringType : Swift.Hashable {}
