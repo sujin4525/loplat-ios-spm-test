@@ -16,8 +16,9 @@ jobs:
       - run: |
           git fetch --prune --unshallow
       - run: |
-          using: 'node16'
           echo $(git tag -l)
+      - runs:
+          using: 'node16'
 
 
       - name: Extract Version and Create Tag
@@ -92,10 +93,12 @@ jobs:
       - name: Release 생성
         uses: actions/create-release@v1
         with: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           tag_name: ${{ steps.create_tag.outputs.VERSION }}
           release_name: ${{ steps.create_tag.outputs.VERSION }}
           draft: false 
           prerelease: false
+        
           
      
 
