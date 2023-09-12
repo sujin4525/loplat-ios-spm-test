@@ -17,9 +17,6 @@ jobs:
           git fetch --prune --unshallow
       - run: |
           echo $(git tag -l)
-      - runs:
-          using: 'node16'
-
 
       - name: Extract Version and Create Tag
         id: create_tag
