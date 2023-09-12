@@ -46,11 +46,11 @@
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/coremldata.bin</key>
 		<data>
-		aI8kCdI72wfz5cW/0sTQNRohtjg=
+		HcMZxkofXGZ4X/5uSiTARaMp6v8=
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/metadata.json</key>
 		<data>
-		h9xJqJdAyfTmjVTf+6wevZXtiSI=
+		KBTLxtKeY77lAzukilCnjPmZjs0=
 		</data>
 		<key>loplatActivityRecognition.mlmodelc/model.espresso.net</key>
 		<data>
@@ -142,14 +142,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kTja/q3PPXrlV1SgroK/Fodl3ATog/ufBAsajf0ktJc=
+			B9k/Z4wB5pbYoa0UM9UmautemaTfCyWQudVnLJZRIR8=
 			</data>
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GCVSu9ziZNb3k7Hc9lhzPRODs+GPQrDPhKcI6shhKJM=
+			0giUo6nCsI/W1fdeC9vrcEDWUcjxA+FaM84Zqu44g3c=
 			</data>
 		</dict>
 		<key>loplatActivityRecognition.mlmodelc/model.espresso.net</key>
