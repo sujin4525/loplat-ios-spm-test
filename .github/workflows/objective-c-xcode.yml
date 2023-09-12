@@ -2,11 +2,8 @@
 name: Xcode - Build and Analyze
 
 on:
-  workflow_dispatch:
-    inputs:
-       version:
-          description: 'version'     
-          required: true
+  push:
+    branches: [version]
 
 jobs:
   deploy:
@@ -30,10 +27,10 @@ jobs:
           if [[ $commit_message =~ ([0-9]+\.[0-9]+\.[0-9]+) ]]; then
             version="${BASH_REMATCH[1]}"
             echo "추출된 버전: $version"
-            echo "VERSION=$version" >> $GITHUB_ENV  # 버전을 환경 변수로 설정
+            echo "VERSION=v$version" >> $GITHUB_ENV  # 버전을 환경 변수로 설정
 
             # # Git 태그 생성
-            # git tag "v$version"
+            # git tag "$version"
             # git push --tags
           else
             echo "버전 번호를 찾을 수 없습니다."
@@ -91,12 +88,10 @@ jobs:
 
       - name: Release 생성
         uses: actions/create-release@v1
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with: 
-          tag_name: $VERSION
-          release_name: $VERSION
-          draft: false
+          tag_name: ${{ env.$VERSION }}
+          release_name: ${{ env.$VERSION }}
+          draft: false 
           prerelease: false
           
      
