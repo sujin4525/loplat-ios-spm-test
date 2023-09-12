@@ -15785,7 +15785,7 @@
       "kind": "StringLiteral",
       "offset": 229,
       "length": 7,
-      "value": "\"2.0.0\""
+      "value": "\"1.4.8\""
     },
     {
       "filePath": "\/Users\/loplat\/repository\/loplat\/loplat-ios-sdk_v2\/PlaceEngine\/PlaceEngine\/ZIPEngine\/GZip\/GzipHeader.swift",
