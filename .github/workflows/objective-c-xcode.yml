@@ -4,7 +4,7 @@ name: Xcode - Build and Analyze
 on:
   # workflow_dispatch:
   push:
-    branches: [version]
+    branches: [ main ]
 
 jobs:
   deploy:
