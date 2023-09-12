@@ -42,11 +42,11 @@ jobs:
         run: |
           echo "${{ steps.create_tag.outputs.VERSION }}"
 
-          echo "${{ github.event.inputs.version }}"
-          echo $(git tag)
-          existing_tag=$(git tag --list "${{ github.event.inputs.version }}")
-          #echo "tag $existing_tag"
-          echo "tag ${existing_tag//$'\n'/}"
+          # echo "${{ github.event.inputs.version }}"
+          # echo $(git tag)
+          # existing_tag=$(git tag --list "${{ github.event.inputs.version }}")
+          # #echo "tag $existing_tag"
+          # echo "tag ${existing_tag//$'\n'/}"
 
           
       #     if [[ -z "$existing_tag" ]]; then
