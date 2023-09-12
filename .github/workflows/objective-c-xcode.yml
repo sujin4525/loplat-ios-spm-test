@@ -2,7 +2,7 @@
 name: Xcode - Build and Analyze
 
 on:
-  workflow_dispatch:
+  # workflow_dispatch:
   push:
     branches: [version]
 
