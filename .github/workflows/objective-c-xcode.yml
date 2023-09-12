@@ -28,11 +28,11 @@ jobs:
           if [[ $commit_message =~ ([0-9]+\.[0-9]+\.[0-9]+) ]]; then
             version="${BASH_REMATCH[1]}"
             echo "추출된 버전: $version"
-            # echo "VERSION=v$version" >> $GITHUB_ENV  # 버전을 환경 변수로 설정
             echo "::set-output name=VERSION::v$version"
-            # # Git 태그 생성
-            # git tag "$version"
-            # git push --tags
+            
+            # Git 태그 생성
+            git tag "v$version"
+            git push --tags
           else
             echo "버전 번호를 찾을 수 없습니다."
           fi
