@@ -41,6 +41,7 @@ jobs:
         id: check_version
         run: |
           echo "${{ steps.create_tag.outputs.VERSION }}"
+          
 
           # echo "${{ github.event.inputs.version }}"
           # echo $(git tag)
