@@ -20,6 +20,7 @@ jobs:
 
 
       - name: Extract Version and Create Tag
+        id: create_tag
         run: |
           # Git commit 메시지 가져오기
           commit_message=$(git log -1 --pretty=%B)
@@ -28,8 +29,8 @@ jobs:
           if [[ $commit_message =~ ([0-9]+\.[0-9]+\.[0-9]+) ]]; then
             version="${BASH_REMATCH[1]}"
             echo "추출된 버전: $version"
-            echo "VERSION=v$version" >> $GITHUB_ENV  # 버전을 환경 변수로 설정
-
+            # echo "VERSION=v$version" >> $GITHUB_ENV  # 버전을 환경 변수로 설정
+            echo "::set-output name=VERSION::v$version"
             # # Git 태그 생성
             # git tag "$version"
             # git push --tags
@@ -90,8 +91,8 @@ jobs:
       - name: Release 생성
         uses: actions/create-release@v1
         with: 
-          tag_name: ${{ env.$VERSION }}
-          release_name: ${{ env.$VERSION }}
+          tag_name: ${{ steps.create_tag.outputs.VERSION }}
+          release_name: ${{ steps.create_tag.outputs.VERSION }}
           draft: false 
           prerelease: false
           
